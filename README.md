@@ -1,8 +1,9 @@
 # Cryptimeleon on Android
 
-This repository is an example of how to use the cryptimeleon libraries on android.an
+This repository is an example of how to use the cryptimeleon libraries on android.
+We therefore implement the Pointcheval-Sanders signature scheme from the [pairing tutorial](https://cryptimeleon.github.io/getting-started/pairing-tutorial.html).
 
-## How to use cryptimeleon on android:
+## How to use cryptimeleon on android
 
  1. Create a new android project in Android Studio. ![](images/app-setup.png)
  2. Add cryptimeleon dependencies to `app/build.gradle`:
@@ -12,9 +13,10 @@ This repository is an example of how to use the cryptimeleon libraries on androi
       ```
     You can find details on the maven pages: [math](https://search.maven.org/artifact/org.cryptimeleon/math/2.0.0/jar), [craco](https://search.maven.org/artifact/org.cryptimeleon/craco/2.0.0/jar)
 
-## Faster pairing with mcl:
+## Faster pairings with mcl
 
-We use the C++ library herumi/mcl as a fast implementation of the BarretoNaehrig group which provides a massive speedup compared to the Java implementation.
+We use the C++ library [herumi/mcl](https://github.com/herumi/mcl) as a fast implementation of the BarretoNaehrig group.
+This provides a massive speedup compared to the Java implementation.
 
 ### Precompiled library
 
