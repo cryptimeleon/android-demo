@@ -1,4 +1,4 @@
-package org.cryptimeleon.demo;
+package org.cryptimeleon.androiddemo;
 
 import android.content.Context;
 
