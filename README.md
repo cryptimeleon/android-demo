@@ -1,6 +1,6 @@
-# Cryptimeleon on Android
-
 [![Build](https://github.com/cryptimeleon/android-demo/actions/workflows/workflow.yaml/badge.svg?branch=main)](https://github.com/cryptimeleon/android-demo/actions/workflows/workflow.yaml)
+
+# Cryptimeleon on Android
 
 This repository is an example of how to use the cryptimeleon libraries on android.
 We therefore implement the Pointcheval-Sanders signature scheme from the [pairing tutorial](https://cryptimeleon.github.io/getting-started/pairing-tutorial.html).
