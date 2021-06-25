@@ -4,11 +4,11 @@
 
 This repository is an example of how to use the cryptimeleon libraries on android.
 We therefore implement the Pointcheval-Sanders signature scheme from the [pairing tutorial](https://cryptimeleon.github.io/getting-started/pairing-tutorial.html).
-![](images/app.gif | height = 450)
+![](images/app.gif | height=450)
 
 ## How to use cryptimeleon on android
 
- 1. Create a new android project in Android Studio. ![](images/app-setup.png | height = 300)
+ 1. Create a new android project in Android Studio. ![](images/app-setup.png | height=300)
  2. Add cryptimeleon dependencies to `app/build.gradle`:
       ```
       implementation 'org.cryptimeleon:math:2.0.0'
