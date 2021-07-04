@@ -16,6 +16,8 @@ We therefore implement the Pointcheval-Sanders signature scheme from the [pairin
       ```
     You can find details on the maven pages: [math](https://search.maven.org/artifact/org.cryptimeleon/math/2.0.0/jar), [craco](https://search.maven.org/artifact/org.cryptimeleon/craco/2.0.0/jar)
 
+**Note:** When running using a Virtual Device (Android Emulator), make sure to use a `x86_64` image.
+
 ## Faster pairings with mcl
 
 We use the C++ library [herumi/mcl](https://github.com/herumi/mcl) as a fast implementation of the BarretoNaehrig group.
