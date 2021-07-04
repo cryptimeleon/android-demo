@@ -12,9 +12,9 @@ import org.cryptimeleon.math.structures.groups.GroupElement;
 import org.cryptimeleon.math.structures.groups.cartesian.GroupElementVector;
 import org.cryptimeleon.math.structures.groups.elliptic.BilinearGroup;
 import org.cryptimeleon.math.structures.groups.elliptic.BilinearMap;
-import org.cryptimeleon.math.structures.groups.elliptic.type3.mcl.MclBilinearGroup;
 import org.cryptimeleon.math.structures.rings.cartesian.RingElementVector;
 import org.cryptimeleon.math.structures.rings.zn.Zn;
+import org.cryptimeleon.mclwrap.bn254.MclBilinearGroup;
 
 import java.math.BigInteger;
 
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             // Choose number of messages r
             int r = 3;
 
-            // BN pairing is type 3 and we specify a 100 bit security parameter
+            // Mcl pairing is type 3
             BilinearGroup bilinearGroup = new MclBilinearGroup();
 
             // Let's collect the values for our pp
