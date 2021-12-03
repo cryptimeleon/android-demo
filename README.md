@@ -36,7 +36,7 @@ This needs to be compiled using NDK and added to the project as a jniLib.
  1. Install [NDK](https://developer.android.com/studio/projects/install-ndk)
  2. Checkout [MCL](https://github.com/herumi/mcl) with the *correct version* (currently v1.28, which is the first release with native android support)
  3. Build mcl (might not be necessary) by following the instructions
- 4. Build mcl for android: Go to `mcl/ffi/java/android/jni` and call `ndk-build` (either add ndk-build to your path, or use an absolute path, e.g. `$<path-to-mcl>/ffi/java/android/jni$ ~/Android/Sdk/ndk/22.1.7171670/ndk-build`)
+ 4. Build mcl for android: Go to `mcl/ffi/java/android/jni` and call `ndk-build` (either add ndk-build to your path, or use an absolute path, e.g. `$<path-to-mcl>/ffi/java/android/jni$ ~/Android/Sdk/ndk/22.1.7171670/ndk-build`). Currently, mcl's Application.mk builds native libraries for the arm64-v8a, armeabi-v7a and x86_64 architectures. If you require additional architectures (e.g. x86 for the Android emulator), add a space and the architecture name at the and of the line starting with APP_ABI in Application.mk before invoking ndk-build
  5. Copy the directories in `mcl/ffi/java/android/libs` (which contain the `libmcljava.so` file) to `app/src/main/jniLibs`
  6. Load mcl in the app prior usage with `System.loadLibrary("mcljava")`, e.g. in `MainActivity.onCreate`.
  7. Add the dependency `implementation 'org.cryptimeleon:mclwrap:3.0.0'` to the app's build.gradle
